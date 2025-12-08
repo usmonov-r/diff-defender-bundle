@@ -1,0 +1,10 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Busanstu\DiffDefenderBundle\:
+        resource: '../../src/'
+
+    Busanstu\DiffDefenderBundle\Command\ReviewCommand:
+        tags: ['console.command']
