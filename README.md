@@ -1,7 +1,15 @@
-# 🛡️ DiffDefender Bundle — Local AI Code Reviewer for Symfony 🐘
+<div align="center">
+
+   # 🛡️ DiffDefender Bundle — Local AI Code Reviewer for Symfony 🐘
 
 DiffDefender is a **privacy‑first**, **local‑only** AI code review bundle built specifically for **Symfony** developers. It runs entirely on your machine using **Ollama**, ensuring that **your proprietary code never leaves your environment**.
 
+![status](https://img.shields.io/badge/status-active-brightgreen)
+![license](https://img.shields.io/badge/license-MIT-blue)
+![php](https://img.shields.io/badge/PHP-8.1+-violet)
+![symfony](https://img.shields.io/badge/Symfony-6%2F7%2F8-black)
+![ai](https://img.shields.io/badge/AI-local%20only-orange)
+</div>
 It analyzes your **staged Git changes**, injects relevant Symfony context (security configs, routes, migrations, etc.), and uses a specialized AI model to detect:
 - Security issues
 - Bad practices
