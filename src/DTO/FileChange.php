@@ -2,7 +2,6 @@
 
 namespace Busanstu\DiffDefenderBundle\DTO;
 
-
 class FileChange
 {
     public function __construct(
