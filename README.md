@@ -9,6 +9,7 @@ DiffDefender is a **privacy‑first**, **local‑only** AI code review bundle bu
 ![php](https://img.shields.io/badge/PHP-8.1+-violet)
 ![symfony](https://img.shields.io/badge/Symfony-6%2F7%2F8-black)
 ![ai](https://img.shields.io/badge/AI-local%20only-orange)
+
 </div>
 It analyzes your **staged Git changes**, injects relevant Symfony context (security configs, routes, migrations, etc.), and uses a specialized AI model to detect:
 - Security issues
