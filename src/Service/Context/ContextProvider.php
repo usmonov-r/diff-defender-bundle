@@ -40,9 +40,9 @@ class ContextProvider
                 $migrationTime = filemtime($latestMigration);
 
                 if ($entityTime > $migrationTime) {
-                    $context[] = ">>> SYSTEM ALERT <<<\n".
-                                 "This Entity was modified AFTER the latest migration.\n" .
-                                 "Check if the user forgot to run 'php bin/console make:migration'.";
+                    $context[] = ">>> SYSTEM ALERT <<<\n" .
+                        "This Entity was modified AFTER the latest migration.\n" .
+                        "Check if the user forgot to run 'php bin/console make:migration'.";
                 }
 
                 $context[] = $migrationContent;
