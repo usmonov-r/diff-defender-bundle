@@ -9,6 +9,7 @@ use SebastianBergmann\Diff\Parser;
 class DiffParser
 {
     private Parser $parser;
+
     public function __construct()
     {
         $this->parser = new Parser();
@@ -28,10 +29,8 @@ class DiffParser
 
             foreach ($diff->Chunks() as $chunk) {
                 $currentLineNum = $chunk->end();
-                foreach ($chunk->lines() as $line)
-                {
-                    switch ($line->type())
-                    {
+                foreach ($chunk->lines() as $line) {
+                    switch ($line->type()) {
                         case Line::ADDED:
                             $addedLines[$currentLineNum] = $line->content();
                             $currentLineNum++;
